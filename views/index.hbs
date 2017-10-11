@@ -24,7 +24,7 @@
           <li>
             <a href="/{{relative}}" title="{{title}}" class="{{ext}}">{{base}}</a>
             {{#if size}}
-            <audio controls>
+            <audio controls preload="none">
               <source src="/{{relative}}" type="audio/mpeg">
             </audio>
             <i>{{size}}</i>

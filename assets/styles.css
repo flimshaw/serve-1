@@ -10,6 +10,12 @@ main {
   max-width: 920px;
 }
 
+audio {
+  width: 75px;
+  position: absolute;
+  top: 2.5em;
+}
+
 a {
   color: #1A00F2;
   text-decoration: none;
@@ -62,6 +68,7 @@ ul li i {
   font-style: normal;
   white-space: nowrap;
   padding-left: 15px;
+  position: relative;
 }
 
 ul a {
