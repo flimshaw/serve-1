@@ -23,10 +23,12 @@
         {{#each files}}
           <li>
             <a href="/{{relative}}" title="{{title}}" class="{{ext}}">{{base}}</a>
+            {{#if size}}
             <audio controls>
               <source src="/{{relative}}" type="audio/mpeg">
             </audio>
             <i>{{size}}</i>
+            {{/if}}
           </li>
         {{/each}}
       </ul>
