@@ -23,6 +23,9 @@
         {{#each files}}
           <li>
             <a href="/{{relative}}" title="{{title}}" class="{{ext}}">{{base}}</a>
+            <audio controls>
+              <source src="/{{relative}}" type="audio/mpeg">
+            </audio>
             <i>{{size}}</i>
           </li>
         {{/each}}
