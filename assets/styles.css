@@ -13,7 +13,8 @@ main {
 audio {
   width: 75px;
   position: absolute;
-  top: 2.5em;
+  top: 0;
+  right: 3em;
 }
 
 a {
@@ -58,7 +59,7 @@ ul li {
   padding: 10px 0;
   font-size: 14px;
   display: flex;
-    position: relative;
+  position: relative;
   justify-content: space-between;
 }
 
