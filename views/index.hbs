@@ -21,14 +21,16 @@
 
       <ul id="trackList">
         {{#each files}}
-          <li>
+          <li{{#if size}} class="file"{{/if}}>
+						<div class="inner">
             <a href="/{{relative}}" title="{{title}}" class="{{ext}}">{{base}}</a>
             {{#if size}}
+						<i>{{size}}</i>
             <audio controls preload="none">
               <source src="/{{relative}}" type="audio/mpeg">
             </audio>
-            <i>{{size}}</i>
             {{/if}}
+						</div>
           </li>
         {{/each}}
       </ul>
